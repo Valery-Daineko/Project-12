@@ -1,0 +1,54 @@
+.error404{
+  background-image: url('img/404.png');
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  .inner{
+    text-align: center;
+    width: 100%;
+  }
+
+  .title{
+    @include span(2 of 4);
+    color: #ff5e1b;
+    font-family: $ff-comfortaa;
+    font-size: 250px;
+    font-weight: 600;
+    text-align: right;
+    line-height: 1;
+  }
+
+  .info{
+    @include span(2 of 4 last);
+    text-align: left;
+
+    h3{
+      font-size: 72px;
+      font-weight: 300;
+      color: #949494;
+      margin-bottom: 50px;
+      font-family: $ff-comfortaa;
+    }
+
+    .text{
+      font-family: $ff-comfortaa;
+      color: #949494;
+      font-size: 36px;
+      font-weight: 300;
+
+      b{
+        font-weight: 600;
+      }
+    }
+
+    a{
+      display: block;
+      color: $l_black;
+      font-size: 24px;
+      text-decoration: underline!important;
+      font-weight: 300;
+      margin-top: 40px;
+    }
+  }
+}

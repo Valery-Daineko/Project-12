@@ -1,0 +1,97 @@
+@charset "utf-8";
+html {
+  height: 100%;
+  margin: 0!important;
+}
+body {
+  //position: relative;
+  min-height: 100%;
+  font-family: $base-font-family;
+  background-color: $white;
+  overflow-x: hidden;
+  //overflow: auto!important;
+  //overflow-x: visible;
+  //right: 0!important;
+}
+body, header, main, footer, aside {
+  //@include user-select(none); //block select text or other
+}
+p{
+  @include adjust-font-size-to($base-font-size);
+  //@include leader(1);
+  //@include trailer(1);
+  margin: 0;
+}
+p, img, iframe {
+  //@include margin-trailer();
+}
+h1 {
+  @include adjust-font-size-to( $h1-font-size );
+  @include leader(0, $h1-font-size);
+  @include trailer(0, $h1-font-size);
+  font-weight: $font-weight-light;
+  //font-family: $font-family-bebas;
+}
+h2 {
+  @include adjust-font-size-to( $h2-font-size );
+  @include leader(0, $h2-font-size);
+  @include trailer(0, $h2-font-size);
+}
+h3 {
+  @include adjust-font-size-to( $h3-font-size );
+  @include leader(0, $h3-font-size);
+  @include trailer(0, $h3-font-size);
+}
+h4 {
+  @include adjust-font-size-to( $h4-font-size, 1 );
+  @include leader(0, $h4-font-size);
+  @include trailer(0, $h4-font-size);
+}
+h5 {
+  @include adjust-font-size-to( $h5-font-size );
+  @include leader(0, $h5-font-size);
+  @include trailer(0, $h5-font-size);
+}
+h6 {
+  @include adjust-font-size-to( $h6-font-size );
+  @include leader(0, $h6-font-size);
+  @include trailer(0, $h6-font-size);
+}
+
+a{
+  @include hover-link; //перенести
+  color: map-get(map-get($colors, 'link'), 'base');
+  @include transition(map_get($transition, 'base')...);
+  
+  &:hover{
+    color: map-get(map-get($colors, 'link'), 'hover');
+  }
+
+  &:active{
+    color: map-get(map-get($colors, 'link'), 'active');
+  }
+}
+
+b{
+  font-weight: $font-weight-medium;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  //font-weight: $font-weight-semibold;
+  font-weight: $font-weight-normal;
+}
+
+h1{
+  font-weight: $font-weight-light;
+}
+
+img, iframe {
+  margin: auto;
+  display: block;
+  //max-width: 100%;
+}
+
+blockquote{
+  padding: 0;
+}

@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'Franklin Gothic'; /* Имя шрифта */
+  src: url(fonts/franklin.ttf); /* Путь к файлу со шрифтом */
+  font-weight: 400;
+}

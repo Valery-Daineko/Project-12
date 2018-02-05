@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+body{
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body.noscroll{
+  overflow: hidden;
+}
+
+body.hidden{
+  overflow: hidden;
+}
+
+
+body.admin-bar{
+  #l-page{
+    /*margin-top: 112px;*/
+    width: 1225px;
+
+  }
+}
+
+#wpadminbar{
+  background-color: darken($color_2, 20);
+}
+
+
+#l{
+  &-wrapper{
+    background-color: map_get($colors, 'background_site');
+    position: relative;
+    min-height: 100vh;
+  }
+
+  &-inner, &-inner-big{
+    @include container();
+    //@include pad(1);
+    width: $width_1;
+    position: relative;
+    z-index: 10;
+    overflow: initial;
+
+    @include susy-breakpoint($mobile, $M){
+      @include span(full);
+      @include pad(10px);
+    }
+
+    @include susy-breakpoint($tablet, $T){
+      @include span(full);
+      @include pad(10px);
+    }
+  }
+
+  &-page{
+    @include span(full);
+    //padding-bottom: 200px;
+
+
+
+    @include susy-breakpoint($mobile, $M){
+      padding-bottom: 50px;
+    }
+
+    #l-inner{
+      @include pad(0);
+    }
+
+    #inner-big{
+      @include pad(0);
+    }
+  }
+
+  &-header{
+    @include span(full);
+    background-color: $white;
+    position: relative;
+    z-index: map_get($zindex, 'header');
+
+    @include breakpoint($small){
+      height: auto;
+    }
+  }
+
+  &-footer{
+    @include span(full);
+    //padding: 8px 0;
+    background-color: #f2f2f2;
+    z-index: map_get($zindex, 'footer');
+    position: relative;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+
+
+    @include breakpoint($small){
+      margin-top: 25px;
+      padding: 20px 0;
+    }
+  }
+}
+
+.inner-table{
+  display: table;
+}

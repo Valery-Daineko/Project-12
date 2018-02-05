@@ -1,0 +1,744 @@
+#l-page{
+  @include span(full);
+
+  .title{
+    @include span(full);
+    background-image: url("img/page/title/fonesky2.png");
+    height: 906px;
+
+  .title-head{
+    @include span(full);
+    text-align: center;
+    margin-top: 121px;
+
+    h1{
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #ff004d;
+      font-family: $font-family-bebas;
+      font-size: 95px;
+      line-height: 45px;
+      padding: 20px;
+    }
+
+    h2{
+      text-transform: uppercase;
+      color: #c6003a;
+      font-family: $font-family-bebas;
+      font-weight: 600;
+      font-size: 61px;
+      line-height: 50px;
+    }
+  }
+
+  .title-watermark{
+    @include span(full);
+    padding-left: 140px;
+    margin-top: 30px;
+
+    span{
+      opacity: 0.3;
+      color: #666666;
+      font-size: 200px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 85px;
+    }
+
+  }
+
+  .title-floor{
+    @include span(7 of 12 last);
+    margin-top: 90px;
+
+    span{
+      color: #a80e3d;
+    }
+
+    .t-f{
+      &-1{
+        font-size: 60px;
+        font-weight: lighter;
+        line-height: 45px;
+        text-transform: uppercase;
+      }
+
+      &-2{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 45px;
+        text-transform: uppercase;
+      }
+
+      &-3{
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .title-button{
+    @include span (6.5 of 12 last);
+    margin-top: 75px;
+
+    button{
+      width: 272px;
+      height: 55px;
+      box-shadow: 0 0 24px rgba(219, 16, 78, 0.75);
+      border-radius: 27px;
+      background-color: #db104e;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 32px;
+      text-transform: uppercase;
+      outline: none;
+      border: none;
+
+      &:hover{
+
+        box-shadow: 0 0 100px rgba(219, 16, 78, 0.75);
+        transition: all 200ms ease 0s;
+
+      }
+
+    }
+
+  }
+
+  }
+
+  .review-title{
+    @include span(full);
+
+    .rw-title{
+      overflow: hidden;
+
+      &:before, &:after{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 272px;
+        height: 3px;
+        background: #cccccc;
+        border: solid #FFF;
+        border-width: 0 10px;
+        @include squish(42px);
+      }
+
+      &:before{
+        margin-left: -100%;
+      }
+
+      &:after{
+        margin-right: -100%;
+      }
+    }
+
+    h3{
+      color: #333333;
+      font-size: 46px;
+      font-weight: 900;
+      text-align: center;
+    }
+  }
+
+  .review-line1{
+    @include span(full);
+    text-align: center;
+
+    .r-l-photo{
+      margin-top: 35px;
+      position: relative;
+      @include border-radius(50%);
+      display: inline-block;
+      width: 106px;
+      height: 106px;
+      background-color: #999999;
+    }
+
+
+    .r-l-text{
+      @include span(full);
+      color: #666666;
+      font-size: 16px;
+      font-style: italic;
+    }
+
+    .p32{
+      padding: 32px;
+    }
+
+    .p19{
+      padding: 32px 20px;
+    }
+
+    .r-1{
+      box-shadow: 0 0 10px rgba(51, 51, 51, 0.35);
+      @include border-radius(10px);
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    .r-11{
+       @include span(1.8 of 5.4);
+       text-align: center;
+     }
+
+    .r-12{
+      @include span(1.8 of 5.4);
+      text-align: center;
+    }
+
+    .r-13{
+      @include span(1.8 of 5.4 last);
+      text-align: center;
+    }
+
+    .r-111{
+      @include span(4 of 16);
+      text-align: center;
+    }
+
+    .r-122{
+      @include span(4 of 16);
+      text-align: center;
+    }
+
+    .r-133{
+      @include span(4 of 16);
+      text-align: center;
+    }
+
+    .r-144{
+      @include span(4 of 16 last);
+      text-align: center;
+    }
+
+  }
+
+
+
+  .mt86{
+    margin-top: 86px;
+  }
+
+  .mt36{
+    margin-top: 36px;
+  }
+
+  .mt54{
+    margin-top: 54px;
+  }
+
+  .mt55{
+    margin-top: 55px;
+  }
+
+  .mt73{
+    margin-top: 73px;
+  }
+
+  .mt120{
+    margin-top: 120px;
+  }
+
+  .mt60{
+    margin-top: 60px;
+  }
+
+  .inc100{
+    @include span(full);
+  }
+
+  .inc55{
+    @include span(5.5 of 10);
+  }
+
+  .inc1-1{
+    @include squish(full);
+  }
+
+  .sl{
+    @include span(full);
+    height: 400px;
+    margin-top: 75px;
+
+    .slick-dots{
+      bottom: 15px;
+      color: $white;
+
+      li{
+        display: inline-block;
+        @include squish(10px);
+
+        button{
+          width: 10px;
+          height: 10px;
+          border: 3px solid transparent;
+          background-color: #999999;
+          font-size: 0;
+          @include border-radius(50%);
+          outline: none;
+          padding: 0;
+        }
+
+        &.slick-active{
+          button{
+            width: 13px;
+            height: 13px;
+            border: 3px solid #db104e;
+            background-color: #db104e;
+          }
+        }
+      }
+    }
+
+    .slick-list{
+      height: 400px;
+    }
+
+    img{
+      width: 406px;
+      height: 300px;
+      margin-top: 20px;
+    }
+
+    .review-line1{
+
+      @include span(full);
+      margin-top: 20px;
+
+      .r-1{
+        @include span(full);
+      }
+    }
+
+    .sl-img{
+      background-position: center;
+      background-size: cover;
+    }
+
+  }
+
+  .photo-text{
+
+    .bb-photo {
+      @include span(4 of 10);
+    }
+
+    .bb-text {
+      @include span(5.5 of 10 last);
+    }
+
+  }
+
+  .text-photo{
+
+    .bb-text {
+      @include span (5.5 of 10);
+    }
+
+    .bb-photo {
+      @include span(4 of 10 last);
+    }
+
+  }
+
+  .bloks{
+    @include span(full);
+
+    .bbloks{
+      @include span(full);
+
+      .bb-shadow{
+        box-shadow: 0 0 38px rgba(0, 0, 0, 0.3);
+        background-color: #cccccc;
+      }
+
+      .bb-photo{
+
+        .bb-photo-button{
+          @include span(full);
+          background-color: #ffffff;
+          height: 83px;
+          position: relative;
+          margin-top: -83px;
+
+          span{
+            @include span(2.5 of 4);
+            color: #333333;
+            font-size: 20px;
+            line-height: 40px;
+            font-weight: 400;
+            margin-top: 24px;
+          }
+
+          .button-number{
+            @include span(1.5 of 4 last);
+            margin-top: 22px;
+
+            button{
+              border-radius: 20px;
+              background-color: #db104e;
+              width: 166px;
+              height: 40px;
+              color: #ffffff;
+              font-size: 16px;
+              font-weight: 500;
+              text-transform: uppercase;
+              outline: none;
+              border: none;
+            }
+          }
+        }
+
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .bb-text{
+        margin-top: 84px;
+
+        span{
+          color: #333333;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+
+  .red{
+    background-color: #e44123;
+  }
+
+  .blue{
+    background-color: #6061ff;
+  }
+
+  .green{
+    background-color: #20a83c;
+  }
+
+  .black{
+    background-color: #0b0b0b;
+  }
+
+
+  .color-blok{
+    @include span(full);
+    height: 720px;
+
+    .review-title{
+      @include span(full);
+
+      .rw-title{
+        overflow: hidden;
+
+        &:before, &:after{
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          width: 272px;
+          height: 3px;
+          background: #ffffff;
+          border: solid #FFF;
+          border-width: 0 10px;
+          margin: 0 42px;
+        }
+
+        &:before {
+          margin-left: -100%;
+        }
+
+        &:after {
+          margin-right: -100%;
+        }
+      }
+
+      h3{
+        color: #ffffff;
+        font-size: 46px;
+        font-weight: 900;
+        text-align: center;
+      }
+    }
+
+    .color-blok-title{
+      @include span(7 of 12 last);
+      margin-top: 57px;
+
+      span{
+        color: #ffffff;
+        font-size: 20px;
+        font-style: italic;
+      }
+    }
+  }
+
+  .forms{
+    @include span(full);
+    margin-top: 25px;
+
+    .inp{
+        padding-top: 50px;
+        outline: none;
+        border: 0;
+        border-bottom: 2px solid #db104e;
+        color: #333333;
+        font-family: $base-font-family;
+        font-size: 20px;
+        font-weight: 300;
+        font-style: italic;
+        padding-left: 15px;
+      }
+
+    .button-number{
+      width: auto;
+
+      button{
+        @include border-radius(20px);
+        background-color: #db104e;
+        width: 287px;
+        height: 40px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        outline: none;
+        border: none;
+      }
+    }
+
+    .left-forms{
+      @include span(2.5 of 10);
+      @include pre(1);
+    }
+
+    .right-forms{
+      @include span(20 of 40 last);
+      @include post(1);
+
+     .double-input{
+        @include span(full);
+
+       .d-i1{
+         @include span(1 of 2);
+
+         input{
+           @include span(full);
+         }
+       }
+
+       .d-i2{
+         @include span(1 of 2 last);
+
+         input{
+           @include span(full);
+         }
+       }
+     }
+    }
+  }
+
+  .numbering{
+    @include span(full);
+    text-align: center;
+    margin-top: 150px;
+
+    ul{
+      display: inline-block;
+
+      li{
+        float: left;
+
+        a{
+          color: #666666;
+          font-size: 20px;
+          font-weight: 500;
+          padding: 14px 12px;
+
+          &:hover{
+            color: $white;
+            font-size: 20px;
+            font-weight: 500;
+            @include border-radius(3px);
+            background-color: #db104e;
+          }
+        }
+      }
+    }
+  }
+
+  .slik{
+    @include span(full);
+
+    .slick-dots{
+      bottom: 50px;
+     color: $white;
+
+      li{
+        display: inline-block;
+        @include squish(10px);
+
+        button{
+          width: 10px;
+          height: 10px;
+          border: 3px solid transparent;
+          background-color: $white;
+          font-size: 0;
+          @include border-radius(50%);
+          outline: none;
+          padding: 0;
+        }
+
+        &.slick-active{
+          button{
+            width: 13px;
+            height: 13px;
+            border: 3px solid $white;
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+#l-footer{
+  @include span(full);
+  margin-top: 135px;
+  height: 117px;
+  background-color: #333333;
+
+  .logo{
+      @include span(1.6 of 10);
+      margin-top: 15px;
+
+      .sky{
+        float: right;
+      }
+
+      span{
+        color: #ffffff;
+        font-family: $ff-franklin;
+        font-size: 61px;
+        font-weight: bold;
+        line-height: 45px;
+        text-transform: uppercase;
+      }
+
+  }
+
+  .foot{
+    @include span(6 of 10);
+    @include pre(0.5);
+
+    .navigation{
+      @include span(full);
+      margin-top: 32px;
+      text-align: center;
+
+      ul{
+        display: inline-block;
+
+        li{
+          float: left;
+          display: inline;
+          padding: 0 17px;
+
+          a{
+            font-size: 20px;
+            color: $white;
+            font-weight: 400;
+
+            &:hover{
+              color: $white;
+              font-weight: 500;
+              border-top: 1px solid #db104e;
+              border-bottom: 1px solid #db104e;
+              padding: 15px 0;
+            }
+          }
+        }
+      }
+    }
+
+    .info{
+      @include span(full);
+      margin-top: 23px;
+      text-align: center;
+
+      span{
+        color: $white;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .number{
+    @include span(17.265% last);
+    text-align: center;
+    display: inline-block;
+
+    .phone-number{
+      width: auto;
+      margin-top: 35px;
+
+      .numeral{
+        color: $white;
+        font-size: 24px;
+        font-weight: 400;
+      }
+
+      .num{
+
+      }
+
+      .ter{
+        font-family: Arial;
+        padding: 0 5px;
+      }
+
+    }
+
+    .button-number{
+      margin-top: -20px;
+
+      button{
+        border-radius: 20px;
+        background-color: #db104e;
+        width: 166px;
+        height: 40px;
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        outline: none;
+        border: none;
+
+        &:hover{
+          background-color: #eb2964;
+          transition: all 200ms ease 0s;
+        }
+
+        &:active{
+          background-color: #c20e44;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+

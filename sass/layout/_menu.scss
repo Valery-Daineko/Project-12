@@ -1,0 +1,120 @@
+#l-header{
+  @include span(full);
+  height: 94px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #e8e8e8;
+
+  .logo{
+    @include span(2 of 10);
+    text-align: right;
+    margin-top: 21px;
+  }
+
+  .navigasion{
+    @include span(6 of 10);
+  }
+
+  .number{
+    @include span(2 of 10 last);
+  }
+
+
+  .logo{
+
+    .sky{
+      float: right;
+    }
+
+    span{
+      text-shadow: 0 0 14px rgba(219, 16, 78, 0.35);
+      color: #242424;
+      font-family: $ff-franklin;
+      font-size: 61px;
+      font-weight: bold;
+      line-height: 45px;
+      text-transform: uppercase;
+    }
+  }
+
+  .navigasion{
+    margin-top: 35px;
+    text-align: center;
+
+    ul{
+      display: inline-block;
+
+      li{
+        float: left;
+        padding: 0 17px;
+
+        a{
+          font-size: 20px;
+          color: #666666;
+          font-weight: 400;
+
+          &:hover{
+            color: #242424;
+            font-weight: 500;
+            border-top: 1px solid #db104e;
+            border-bottom: 1px solid #db104e;
+            padding: 15px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .number{
+    text-align: center;
+    display: inline-block;
+    height: 94px;
+
+    .phone-number{
+      width: auto;
+      margin-top: 25px;
+
+      .numeral{
+        color: $black;
+        font-size: 24px;
+        font-weight: 400;
+      }
+
+      .num{
+
+      }
+
+      .ter{
+        font-family: Arial;
+        padding: 0 5px;
+      }
+    }
+
+    .button-number{
+      width: auto;
+      margin-top: 20px;
+
+      button{
+        @include border-radius(20px);
+        background-color: #db104e;
+        width: 166px;
+        height: 40px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        outline: none;
+        border: none;
+
+        &:hover{
+          background-color: #eb2964;
+          transition: all 200ms ease 0s;
+        }
+
+        &:active{
+          background-color: #c20e44;
+        }
+      }
+    }
+  }
+
+}
